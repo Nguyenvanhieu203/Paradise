@@ -1,0 +1,444 @@
+.space__heading h1{
+    margin-bottom: 100px;
+}
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header__nav,
+.header__register{
+    padding: 15px;
+}
+.header__register--items,
+.header__nav--items{
+    display: flex;
+    list-style: none;
+}
+.header__logo,
+.header__register--items li,
+.header__nav--items > li{
+    padding: 10px 15px;  
+}
+.header__register--items li a,
+.header__nav--items li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header__register--items li:hover a,
+.header__nav--items >li:hover >a{
+    color: #7ED957;
+}
+
+.header__nav .nav__item{
+    position: relative;
+}
+.subnav_services,
+.subnav_animals{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    top: 40px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.subnav_services{
+    width: 212px;
+}
+.subnav_animals{
+    width: 80px;
+}
+.header__nav--items li:hover .subnav_services,
+.header__nav--items li:hover .subnav_animals{
+    display: block;  
+}
+.subnav_services li,
+.subnav_animals li{
+    padding: 10px 10px;
+}
+.subnav_services li a,
+.subnav_animals li a{
+    color: #000;
+}
+.subnav_services li:hover,
+.subnav_animals li:hover {
+    background-color:#7ED957;
+    color:#fff;
+}
+.subnav_services li:hover a,
+.subnav_animals li:hover a{
+    color:#fff;
+}
+.nav__item:hover  .down_icon,
+.subnav_animals :hover .down_icon,
+.subnav_services :hover .down_icon {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease;
+}
+
+.nav__item  .down_icon,
+.subnav_animals .down_icon,
+.subnav_services .down_icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.banner{
+    height: 200px;
+    background-color: bisque;
+}
+
+/* banner */
+.banner{
+    height: 100vh;
+}
+.banner_img {
+    background-image: url(../img/hinh-anh-thu-cung.jpg);
+    /* padding-top: 75%; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+}
+.banner__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(32,33,36,0.4);
+}
+.banner_text{
+    position: absolute;
+    top: 36%;
+    left: 30%;  
+}
+
+.banner_text h1{
+    font-weight: 1000;
+    font-size: 6rem;
+    color: #fff;
+    margin: 0;
+
+}
+.banner_text p{
+    color: #fff;
+    font-size: 2rem;
+}
+.banner__icon{
+    width: 100%;
+}
+.banner--down_icon{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    color: #fff;
+}
+.banner--down_icon:hover{
+    opacity: 0.6;
+}
+.banner--circle_icon{
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    color: #fff;
+    font-size: 300px;
+    overflow: hidden;
+}
+.banner--foot_icon{
+    color: #000;
+    position: absolute;
+    top: 74%;
+    left: 1%;
+    font-size: 180px;
+}
+
+/* Content */
+
+/* content intro */
+.content{
+    margin-top: 150px;
+}
+.content__intro--text{
+    border: solid 3px black;
+    padding: 30px;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 15px 20px #7ED957;
+}
+.content__intro--text h2,
+.content__intro--text p{
+    padding: 15px;
+    line-height: 1.4rem;
+}
+.read__more__button{
+   padding-left: 70%;
+    margin-top: 20px;
+}
+.read__more__button a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #7ED957;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: solid 2px black;
+}
+.read__more__button a:hover{
+    opacity: 0.7;
+}
+.content__intro--img{
+    border: solid 6px black;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.content__intro--img img{
+    width: 100%;
+    height: auto;
+}
+.content__intro--button a{
+    position: absolute;
+    top: 50px;
+}
+.content__icon--item1,
+.content__icon--item2{
+    position: absolute;
+}
+.content__icon--item1{
+    bottom: -23%;
+    left: 46%;
+}
+.content__icon--item2{
+    bottom: -30%;
+    left: 50%;
+    transform: rotate(35deg);
+}
+.content--foot_icon{
+    font-size: 40px;
+}
+
+/* content animals + acc */
+.content__animals{
+    margin: 100px;
+}
+
+.content__animals--title{
+    margin: 100px 0 0 0;
+    position: relative;
+}
+
+  
+.content__animals--title h1::before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 30%;
+    background-color: #7ED957;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.content__animals--title::after{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 30%;
+    background-color: #7ED957;
+    position: absolute;
+    top: 50%;
+    right: 0%; 
+}
+.content__animals--title h1{
+    text-align: center;
+    color: #7ED957;
+}
+.animal__item--pic {
+    width: 100%;
+    height: 0;
+    padding-top: 100%; /* Đảm bảo tỷ lệ khung hình 1:1 */
+    position: relative;
+}
+  
+.animal__item--pic img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.animals__item--name,
+.animals__item--price{
+    padding: 10px 0;
+}
+.animals__item--name a ,
+.animals__item--price a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.animals__item--name a{
+    color: #000;
+}
+.animals__item--price a {
+    color: #7ED957;
+}
+.animals__icon--item1 .content--foot_icon{
+    position: relative;
+    top: -110px;
+    left: 0;
+}
+.animals__icon--item2 .content--foot_icon {
+    position: relative;
+    top: -170px;
+    left: 5%;
+}
+.button__animal{
+    margin-top: 40px;
+}
+.button__animal a{
+    text-decoration: none;
+    border: solid 2px black;
+    border-radius: 15px;
+    padding: 10px 35px;
+    background-color: #7ED957;
+    float: right;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Services */
+.list_services{
+    background-color: #E5E5E3;
+    width: 100%;
+    height: 550px;
+}
+.services__item{
+    width: 345px;
+    height: 245px;
+    border: solid 2px black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    margin: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.services__item--text{
+    padding-top: 80px;
+}
+.services__item--pic{
+    position: absolute; 
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    border-radius: 50%; 
+    left: 200px;
+}
+.services__item--pic img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle(50%); /* Thay đổi giá trị clip-path để tạo hình tròn */
+}
+.service__icon--quote i{
+    font-size: 80px;
+    padding: 20px 30px;
+}
+.quote_item2{
+    position: relative;
+    top: 390px;
+    left: 82%; 
+}
+/* services category */
+.service__category{
+    margin-top: 80px;
+}
+.service__item--icon i{
+    padding: 40px;
+    background-color: #7ED957;
+    border-radius: 50%;
+    font-size: 60px;
+    color: #fff;
+}
+.service__category--item{
+    text-align: center;
+}
+.service__item--content h2{
+    padding: 20px;
+}
+.service__item--content p{
+    padding: 0 75px;
+    align-items: center;
+}
+/* Footer */
+.footer{
+    background-color: #646A72;
+    margin-top: 300px;
+    color: #fff;
+    padding-bottom: 40px;
+}
+.footer__contact,
+.footer__category,
+.footer__infor{
+    padding: 0 20px;
+}
+.footer__infor--slogan {
+    padding: 20px 0;
+}
+.footer__society--items{
+    list-style: none;
+    display: flex;
+    padding: 20px 0;
+}
+.society__item{
+    padding-right: 15px;
+    font-size: 40px;
+}
+.society__item--fb{
+    color: #fff; 
+}
+
+.society__item--insta{
+    color: #fff;
+}
+.society__item--twiter{
+    color: #fff; 
+}
+.society__item--youtube{
+    color: #fff;
+}
+.footer__contact h2,
+.footer__category h2{
+    border-left: solid 10px #7ED957 ;
+    padding: 10px;
+    margin: 10px;
+}
+.footer__contact p,
+.footer__category p{
+    padding: 10px;
+    padding-left: 30px;
+}
+.footer__category a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer__contact i{
+    padding-right: 10px;
+}
+.footer__image{
+    position: relative;
+    bottom: 79%;
+    left: 6%;
+}
+.footer__coppyright{
+    padding: 20px;
+}
